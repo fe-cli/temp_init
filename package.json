@@ -50,8 +50,9 @@
     "{{#if cssModule}}"
     "less": "^3.9.0",
     "less-loader": "^4.1.0",
-    "{{#else}}"
+    "{{else}}"
     "node-sass":"^4.11.0",
     "sass-loader":"^7.1.0"
+    "{{/if}}"
   }
 }
