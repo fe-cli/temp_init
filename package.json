@@ -47,7 +47,7 @@
     "webpack-cli": "^3.1.2",
     "webpack-dev-server": "^3.1.10",
     "webpack-merge": "^4.1.4",
-    "{{#if cssModule==less}}"
+    "{{#if cssModule == 'less'}}"
     "less": "^3.9.0",
     "less-loader": "^4.1.0",
     "{{#else}}"
