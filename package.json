@@ -47,12 +47,12 @@
     "webpack-cli": "^3.1.2",
     "webpack-dev-server": "^3.1.10",
     "webpack-merge": "^4.1.4",
-    "{{#if cssModule}}"
+    {{#if cssModule}}
     "less": "^3.9.0",
     "less-loader": "^4.1.0",
-    "{{else}}"
+    {{else}}
     "node-sass":"^4.11.0",
     "sass-loader":"^7.1.0"
-    "{{/if}}"
+    {{/if}}
   }
 }
