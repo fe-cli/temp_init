@@ -2,6 +2,7 @@ const UglifyJsPlugin = require('uglifyjs-webpack-plugin')
 const path = require('path')
 // const HtmlWebpackPlugin = require('html-webpack-plugin')
 const config = require('./config')
+const utils = require('./utils')
 const MiniCssExtractPlugin = require('mini-css-extract-plugin')
 const merge = require('webpack-merge')
 // css 压缩
@@ -32,7 +33,7 @@ module.exports = (env, argv) => {
                 }
               }
             },
-            "sass-loader" // sass处理器 、甚至还可以再加一个less的处理器
+            `${utils.cssLoader}` // sass处理器 、甚至还可以再加一个less的处理器
           ]
         },
         {
