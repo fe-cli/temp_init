@@ -57,7 +57,7 @@ const cssModule = () => {
   if (packageConfig.keywords[0]=="less") {
     return 'less-loader'
   } else {
-    return 'less-loader'
+    return 'sass-loader'
   }
 }
 exports.cssLoader = cssModule()
