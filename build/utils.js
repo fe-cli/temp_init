@@ -52,6 +52,15 @@ exports.getIPAdress = function () {
     }
   }
 }
+// sass/less判断
+const cssModule = () => {
+  if(packageConfig.keywords[0]=="sass"){
+    return 'sass-loader'
+  }else{
+    return 'less-loader'
+  }
+}
+exports.cssLoader = cssModule()
 // 'node-notifier'是一个跨平台系统通知的页面，当遇到错误时，它能用系统原生的推送方式给你推送信息
 exports.createNotifierCallback = function () {
   const notifier = require('node-notifier')
