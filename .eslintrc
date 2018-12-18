@@ -1,0 +1,20 @@
+{
+  "extends": "standard",
+  "plugins": [
+    "html"
+  ],
+  "env": {
+    "node": true,
+    "es6": true
+  },
+  "parser": "babel-eslint",
+  "parserOptions": {
+    "sourceType": "module"
+  },
+  "rules": {
+    "indent": [2],
+    "quotes":1,
+    "semi": ["error", "never", { "beforeStatementContinuationChars": "never"}],// 行尾增加分号规则
+    "no-ternary": 0
+  }
+}
