@@ -54,8 +54,8 @@ exports.getIPAdress = function () {
 }
 // sass/less判断
 const cssModule = () => {
-  if (packageConfig.keywords[0]=="sass") {
-    return 'sass-loader'
+  if (packageConfig.keywords[0]=="less") {
+    return 'less-loader'
   } else {
     return 'less-loader'
   }
